@@ -8,23 +8,23 @@
 
 def getLetterGrade(grade): 
   if getLetterGrade >= 93.0 :
-    return 'A'
+    return 'A\n'
   elif getLetterGrade >= 90.0 :
-    return 'A-'
+    return 'A-\n'
   elif getLetterGrade >= 87.0 :
-    return 'B+'
+    return 'B+\n'
   elif getLetterGrade >= 83.0 :
-    return 'B'
+    return 'B\n'
   elif getLetterGrade >= 80.0 :
-    return 'B-'
+    return 'B-\n'
   elif getLetterGrade >= 77.0 :
-    return 'C+'
+    return 'C+\n'
   elif getLetterGrade >= 70.0 :
-    return 'C'
+    return 'C\n'
   elif getLetterGrade >= 60.0 :
-    return 'D'
+    return 'D\m'
   elif getLetterGrade <= 60.0 :
-    return 'F'
+    return 'F\n'
 
 def run():
   getLetterGrade = float(input("Enter your CMPSC 131 grade: "))
