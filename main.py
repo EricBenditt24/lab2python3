@@ -7,30 +7,49 @@
 
 
 def getLetterGrade(grade): 
-  getLetterGrade = float(input("Enter your CMPSC 131 grade: ")) 
-  if getLetterGrade >= 93.0 :
+  if grade >= 93.0 :
     return 'A\n'
-  elif getLetterGrade >= 90.0 :
+  elif grade >= 90.0 :
     return 'A-\n'
-  elif getLetterGrade >= 87.0 :
+  elif grade >= 87.0 :
     return 'B+\n'
-  elif getLetterGrade >= 83.0 :
+  elif grade >= 83.0 :
     return 'B\n'
-  elif getLetterGrade >= 80.0 :
+  elif grade >= 80.0 :
     return 'B-\n'
-  elif getLetterGrade >= 77.0 :
+  elif grade >= 77.0 :
     return 'C+\n'
-  elif getLetterGrade >= 70.0 :
+  elif grade >= 70.0 :
     return 'C\n'
-  elif getLetterGrade >= 60.0 :
+  elif grade >= 60.0 :
     return 'D\n'
-  elif getLetterGrade <= 60.0 :
+  else:
     return 'F\n'
-  print(f"Your letter grade for CMPSC 131 is {getLetterGrade()}.") 
 
 def run():
-  if __name__ == '__main__':
-    run()  
+  grade = input("Enter your CMPSC 131 grade: ") 
+  numbergrade = float(grade) 
+  if numbergrade>=93.0:
+    print("Your letter grade for CMPSC 131 is",getLetterGrade(100.0)+".")
+  elif numbergrade>=90.0 and numbergrade<=93.0:
+    print("Your letter grade for CMPSC 131 is",getLetterGrade(92.0)+".")
+  elif numbergrade>= 87.0 and numbergrade<=90.0: 
+    print("Your letter grade for CMPSC 131 is",getLetterGrade(88.0)+".")
+  elif numbergrade>= 83.0 and numbergrade<=87.0:
+    print("Your letter grade for CMPSC 131 is",getLetterGrade(84.0)+".")
+  elif numbergrade>= 80.0 and numbergrade<=83.0:
+    print("Your letter grade for CMPSC 131 is",getLetterGrade(81.00)+".")
+  elif numbergrade>= 77.0 and numbergrade<=80.0:
+    print("Your letter grade for CMPSC 131 is",getLetterGrade(78.0)+".")
+  elif numbergrade>= 70.0 and numbergrade<=77.0:
+    print("Your letter grade for CMPSC 131 is",getLetterGrade(71.0)+".")
+  elif numbergrade>= 60.0 and numbergrade<=70.0:
+    print("Your letter grade for CMPSC 131 is",getLetterGrade(61.0)+".")
+  else: 
+    print("Your letter grade for CMPSC 131 is",getLetterGrade(59.0)+".")
+
+if __name__ == '__main__':
+  run()  
 
 
 
